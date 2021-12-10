@@ -4,7 +4,7 @@ import Flex from "../Box/Flex";
 import { TabMenuProps } from "./types";
 
 const Wrapper = styled(Flex)`
-  border-bottom: 2px solid ${({ theme }) => theme.colors.input};
+  border-bottom: 2px solid ${({ theme }) => theme.colors.textSubtle};
   overflow-x: scroll;
 
   ::-webkit-scrollbar {

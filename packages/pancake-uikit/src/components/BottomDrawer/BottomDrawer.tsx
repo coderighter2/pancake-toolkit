@@ -2,12 +2,11 @@ import React, { useRef } from "react";
 import { createPortal } from "react-dom";
 import useOnClickOutside from "../../hooks/useOnClickOutside";
 import useDelayedUnmount from "../../hooks/useDelayedUnmount";
-import { DrawerContainer } from "./styles";
+import { DrawerContainer, StyledOverlay } from "./styles";
 import { CloseIcon } from "../Svg";
 import { Box } from "../Box";
 import { IconButton } from "../Button";
 import useMatchBreakpoints from "../../hooks/useMatchBreakpoints";
-import { Overlay } from "../Overlay";
 
 const portalRoot = document.getElementById("portal-root");
 
@@ -25,23 +24,25 @@ const BottomDrawer: React.FC<BottomDrawerProps> = ({ content, isOpen, setIsOpen 
   useOnClickOutside(ref, () => setIsOpen(false));
 
   if (!shouldRender || !isMobile) {
+    document.body.style.overflow = "visible";
     return null;
   }
 
+  // Prevent scrolling of the page when drawer is shown
+  document.body.style.overflow = "hidden";
+
   return (
     <>
+      <StyledOverlay />
       {createPortal(
-        <>
-          <Overlay />
-          <DrawerContainer ref={ref} isUnmounting={!isOpen}>
-            <Box position="absolute" right="16px" top="0">
-              <IconButton variant="text" onClick={() => setIsOpen(false)}>
-                <CloseIcon />
-              </IconButton>
-            </Box>
-            {content}
-          </DrawerContainer>
-        </>,
+        <DrawerContainer ref={ref} isUnmounting={!isOpen}>
+          <Box position="absolute" right="16px" top="0">
+            <IconButton variant="text" onClick={() => setIsOpen(false)}>
+              <CloseIcon />
+            </IconButton>
+          </Box>
+          {content}
+        </DrawerContainer>,
         portalRoot ?? document.body
       )}
     </>

@@ -20,7 +20,7 @@ const Template: React.FC<FooterProps> = ({ ...args }) => {
 
 export const Default = Template.bind({});
 Default.args = {
-  items: footerLinks,
+  items: [],
   isDark: true,
   toggleTheme: noop,
   langs,

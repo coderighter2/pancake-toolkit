@@ -19,6 +19,8 @@ import { LogoWithTextIcon, ArrowForwardIcon } from "../Svg";
 import { Button } from "../Button";
 import { Colors } from "../..";
 
+import { footerLinks } from "./config";
+
 const MenuItem: React.FC<FooterProps> = ({
   items,
   isDark,
@@ -27,7 +29,7 @@ const MenuItem: React.FC<FooterProps> = ({
   langs,
   setLang,
   cakePriceUsd,
-  buyCakeLabel,
+  // buyCakeLabel,
   ...props
 }) => {
   return (
@@ -43,7 +45,7 @@ const MenuItem: React.FC<FooterProps> = ({
           alignItems="flex-start"
           mb={["42px", null, "36px"]}
         >
-          {items?.map((item) => (
+          {footerLinks?.map((item) => (
             <StyledList key={item.label}>
               <StyledListItem>{item.label}</StyledListItem>
               {item.items?.map(({ label, href, isHighlighted = false }) => (
@@ -70,7 +72,7 @@ const MenuItem: React.FC<FooterProps> = ({
           </Box>
         </Flex>
         <StyledSocialLinks order={[2]} pb={["42px", null, "32px"]} mb={["0", null, "32px"]} />
-        <StyledToolsContainer
+        {/* <StyledToolsContainer
           order={[1, null, 3]}
           flexDirection={["column", null, "row"]}
           justifyContent="space-between"
@@ -99,7 +101,7 @@ const MenuItem: React.FC<FooterProps> = ({
               {buyCakeLabel}
             </Button>
           </Flex>
-        </StyledToolsContainer>
+        </StyledToolsContainer> */}
       </Flex>
     </StyledFooter>
   );

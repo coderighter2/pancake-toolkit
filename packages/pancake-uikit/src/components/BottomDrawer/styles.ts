@@ -1,4 +1,3 @@
-/* eslint-disable import/prefer-default-export */
 import styled, { keyframes, css } from "styled-components";
 
 const MountAnimation = keyframes`
@@ -23,18 +22,25 @@ export const DrawerContainer = styled.div<{ isUnmounting: boolean }>`
   width: 100%;
   height: ${window.innerHeight * 0.81}px;
   background-color: ${({ theme }) => theme.colors.backgroundAlt};
-  border-top-left-radius: 32px;
-  border-top-right-radius: 32px;
+  z-index: 10;
+  border-radius: 32px;
   position: fixed;
   animation: ${MountAnimation} 350ms ease forwards;
-  padding-bottom: env(safe-area-inset-bottom);
-  html[data-useragent*="TokenPocket_iOS"] & {
-    padding-bottom: 45px;
-  }
-  z-index: 21;
   ${({ isUnmounting }) =>
     isUnmounting &&
     css`
       animation: ${UnmountAnimation} 350ms ease forwards;
     `}
+`;
+
+export const StyledOverlay = styled.div`
+  content: "";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: ${({ theme }) => `${theme.colors.text}99`};
+  backdrop-filter: blur(1px);
+  z-index: 10;
 `;

@@ -26,7 +26,6 @@ const StyledNav = styled.nav`
   width: 100%;
   height: ${MENU_HEIGHT}px;
   background-color: ${({ theme }) => theme.nav.background};
-  border-bottom: 1px solid ${({ theme }) => theme.colors.cardBorder};
   transform: translate3d(0, 0, 0);
 
   padding-left: 16px;
@@ -138,7 +137,7 @@ const Menu: React.FC<NavProps> = ({
                 <CakePrice cakePriceUsd={cakePriceUsd} />
               </Box>
             )}
-            <Box mt="4px">
+            {/* <Box mt="4px">
               <LangSelector
                 currentLang={currentLang}
                 langs={langs}
@@ -147,7 +146,7 @@ const Menu: React.FC<NavProps> = ({
                 color="textSubtle"
                 hideLanguage
               />
-            </Box>
+            </Box> */}
             {globalMenu} {userMenu}
           </Flex>
         </StyledNav>

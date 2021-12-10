@@ -4,18 +4,16 @@ import { lightColors } from "../../theme";
 import { styleVariants, styleScales } from "./themes";
 import { ProgressProps, variants } from "./types";
 
-interface ProgressBarProps {
+interface BarProps {
   primary?: boolean;
   $useDark: boolean;
-  $background?: string;
 }
 
-export const Bar = styled.div<ProgressBarProps>`
+export const Bar = styled.div<BarProps>`
   position: absolute;
   top: 0;
   left: 0;
-  background: ${({ theme, $useDark, primary, $background }) => {
-    if ($background) return $background;
+  background-color: ${({ theme, $useDark, primary }) => {
     if ($useDark) return primary ? theme.colors.secondary : `${theme.colors.secondary}80`;
     return primary ? lightColors.secondary : `${lightColors.secondary}80`;
   }};
