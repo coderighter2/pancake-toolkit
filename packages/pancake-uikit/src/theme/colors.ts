@@ -58,7 +58,7 @@ export const lightColors: Colors = {
   backgroundAlt2: "#f1f6f7",
   cardBorder: "#383241",
   contrast: "#FFFFFF",
-  dropdown: "#1E1D20",
+  dropdown: "#cedcde",
   dropdownDeep: "#100C18",
   invertedContrast: "#191326",
   input: "#372F47",
@@ -91,7 +91,7 @@ export const darkColors: Colors = {
   backgroundAlt2: "#f1f6f7", // submenu itmes
   cardBorder: "#d7e0e0",
   contrast: "#FFFFFF",
-  dropdown: "#1E1D20",
+  dropdown: "#cedcde",
   dropdownDeep: "#100C18",
   invertedContrast: "#191326",
   input: "#fff",
