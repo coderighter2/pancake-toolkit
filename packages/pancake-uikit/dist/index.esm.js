@@ -5374,7 +5374,10 @@ var ConnectModal = function (_a) {
                 React__default.createElement(Grid, { gridTemplateColumns: "1fr 1fr" },
                     displayListConfig.map(function (wallet) { return (React__default.createElement(Box, { key: wallet.title },
                         React__default.createElement(WalletCard, { walletConfig: wallet, login: login, onDismiss: onDismiss }))); }),
-                    !showMore && React__default.createElement(MoreWalletCard, { t: t, onClick: function () { return setShowMore(true); } }))))));
+                    !showMore && React__default.createElement(MoreWalletCard, { t: t, onClick: function () { return setShowMore(true); } }))),
+            React__default.createElement(Box, { p: "24px" },
+                React__default.createElement(Text, { textAlign: "center", color: "textSubtle", as: "p", mb: "16px" }, t("Haven’t got a crypto wallet yet?")),
+                React__default.createElement(Button, __assign({ as: "a", href: "https://docs.crowfi.app/products/exchange/getting-started", variant: "subtle", width: "100%" }, getExternalLinkProps()), t("Learn How to Connect"))))));
 };
 var templateObject_1$1;
 
