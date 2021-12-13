@@ -10,9 +10,10 @@ export interface Props {
   cakePriceUsd?: number;
 }
 
-const PriceLink = styled.a`
+const PriceLink = styled.div`
   display: flex;
   align-items: center;
+  cursor: default;
   svg {
     transition: transform 0.3s;
   }
@@ -26,8 +27,9 @@ const PriceLink = styled.a`
 const CakePrice: React.FC<Props> = ({ cakePriceUsd, color = "textSubtle" }) => {
   return cakePriceUsd ? (
     <PriceLink
-      href="https://pancakeswap.finance/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82"
-      target="_blank"
+      // href="#"
+      // href="https://pancakeswap.finance/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82"
+      // target="_blank"
     >
       <PancakeRoundIcon width="24px" mr="8px" />
       <Text color={color} bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
