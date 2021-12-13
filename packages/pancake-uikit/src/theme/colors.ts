@@ -65,7 +65,7 @@ export const lightColors: Colors = {
   inputSecondary: "#262130",
   primaryDark: "#0098A1",
   tertiary: "#e6ebeb",
-  text: "#F9F6FF",     // font color on page or content, before: #F4EEFF
+  text: "#01454B",     // font color on page or content, before: #F4EEFF
   textDisabled: "#666171",
   textSubtle: "#38a169",   // font color on Menu Bar top
   disabled: "#524B63",
