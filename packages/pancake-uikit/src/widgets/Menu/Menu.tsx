@@ -62,6 +62,10 @@ const Inner = styled.div<{ isPushed: boolean; showMenu: boolean }>`
   max-width: 100%;
 `;
 
+const StyledCertikLogo = styled(CertikLogo)`
+  margin-right: 12px;
+`
+
 const Menu: React.FC<NavProps> = ({
   userMenu,
   banner,
@@ -138,7 +142,10 @@ const Menu: React.FC<NavProps> = ({
                 <CakePrice cakePriceUsd={cakePriceUsd} />
               </Box>
             )}
-            <CertikLogo isDark={isDark} href="https://www.certik.com/projects/crowdefi"/>
+            <Box mr="12px">
+              <CertikLogo isDark={isDark} href="https://www.certik.com/projects/crowdefi"/>
+            </Box>
+            
             {/* <Box mt="4px">
               <LangSelector
                 currentLang={currentLang}
