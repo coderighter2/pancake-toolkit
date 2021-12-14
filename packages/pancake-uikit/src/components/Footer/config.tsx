@@ -104,11 +104,11 @@ export const socials = [
   //   icon: "Instagram",
   //   href: "https://instagram.com/smartypay",
   // },
-  {
-    label: "Github",
-    icon: "Github",
-    href: "https://github.com/crowfi/",
-  },
+  // {
+  //   label: "Github",
+  //   icon: "Github",
+  //   href: "https://github.com/crowfi/",
+  // },
 ];
 
 export const langs: Language[] = [...Array(20)].map((_, i) => ({

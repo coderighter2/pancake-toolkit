@@ -4780,11 +4780,11 @@ var socials = [
     //   icon: "Instagram",
     //   href: "https://instagram.com/smartypay",
     // },
-    {
-        label: "Github",
-        icon: "Github",
-        href: "https://github.com/crowfi/",
-    },
+    // {
+    //   label: "Github",
+    //   icon: "Github",
+    //   href: "https://github.com/crowfi/",
+    // },
 ];
 __spreadArray([], Array(20)).map(function (_, i) { return ({
     code: "en" + i,
