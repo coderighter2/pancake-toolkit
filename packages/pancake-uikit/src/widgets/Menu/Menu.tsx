@@ -10,6 +10,7 @@ import { SubMenuItems } from "../../components/SubMenuItems";
 import { useMatchBreakpoints } from "../../hooks";
 import CakePrice from "../../components/CakePrice/CakePrice";
 import Logo from "./components/Logo";
+import CertikLogo from "./components/CertikLogo"
 import { MENU_HEIGHT, MOBILE_MENU_HEIGHT, TOP_BANNER_HEIGHT, TOP_BANNER_HEIGHT_MOBILE } from "./config";
 import { NavProps } from "./types";
 import LangSelector from "../../components/LangSelector/LangSelector";
@@ -137,6 +138,7 @@ const Menu: React.FC<NavProps> = ({
                 <CakePrice cakePriceUsd={cakePriceUsd} />
               </Box>
             )}
+            <CertikLogo isDark={isDark} href="https://www.certik.com/projects/crowdefi"/>
             {/* <Box mt="4px">
               <LangSelector
                 currentLang={currentLang}
