@@ -59,10 +59,10 @@ export const footerLinks: FooterLinkType[] = [
   {
     label: "Developers",
     items: [
-      {
-        label: "Github",
-        href: "https://github.com/crowfi",
-      },
+      // {
+      //   label: "Github",
+      //   href: "https://github.com/crowfi",
+      // },
       {
         label: "Documentation",
         href: "https://docs.crowfi.app/",

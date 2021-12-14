@@ -4736,10 +4736,10 @@ var footerLinks = [
     {
         label: "Developers",
         items: [
-            {
-                label: "Github",
-                href: "https://github.com/crowfi",
-            },
+            // {
+            //   label: "Github",
+            //   href: "https://github.com/crowfi",
+            // },
             {
                 label: "Documentation",
                 href: "https://docs.crowfi.app/",
