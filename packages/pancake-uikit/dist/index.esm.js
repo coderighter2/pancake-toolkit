@@ -3145,7 +3145,10 @@ var RotatingPancakeIcon = styled(Icon)(templateObject_4$6 || (templateObject_4$6
 styled(Icon$1)(templateObject_5$4 || (templateObject_5$4 = __makeTemplateObject(["\n  animation: ", " 6s ease-in-out infinite;\n  transform: translate3d(0, 0, 0);\n"], ["\n  animation: ", " 6s ease-in-out infinite;\n  transform: translate3d(0, 0, 0);\n"])), float);
 var Spinner = function (_a) {
     var _b = _a.size, size = _b === void 0 ? 128 : _b;
-    return (React__default.createElement(Container, null,
+    var styles = {
+        transform: "translate(-" + size / 2 + "px, -" + size / 2 + "px)"
+    };
+    return (React__default.createElement(Container, { style: styles },
         React__default.createElement(RotatingPancakeIcon, { width: size + "px" })));
 };
 var templateObject_1$s, templateObject_2$j, templateObject_3$8, templateObject_4$6, templateObject_5$4;
