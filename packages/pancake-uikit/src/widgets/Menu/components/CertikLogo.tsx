@@ -56,7 +56,7 @@ const CertikLogo: React.FC<Props> = ({ isDark, href }) => {
   return (
     <Flex>
       {isAbsoluteUrl ? (
-        <StyledLink as="a" href={href} aria-label="Certik">
+        <StyledLink as="a" target="_blank" href={href} aria-label="Certik">
           {innerLogo}
         </StyledLink>
       ) : (

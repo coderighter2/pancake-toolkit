@@ -4970,7 +4970,7 @@ var CertikLogo = function (_a) {
     var innerLogo = (React__default['default'].createElement(React__default['default'].Fragment, null,
         React__default['default'].createElement(CertikLogoIcon, { className: "mobile-icon", isDark: isDark }),
         React__default['default'].createElement(CertikLogoTextIcon, { className: "desktop-icon", isDark: isDark })));
-    return (React__default['default'].createElement(Flex, null, isAbsoluteUrl ? (React__default['default'].createElement(StyledLink, { as: "a", href: href, "aria-label": "Certik" }, innerLogo)) : (React__default['default'].createElement(StyledLink, { to: href, "aria-label": "Certik" }, innerLogo))));
+    return (React__default['default'].createElement(Flex, null, isAbsoluteUrl ? (React__default['default'].createElement(StyledLink, { as: "a", target: "_blank", href: href, "aria-label": "Certik" }, innerLogo)) : (React__default['default'].createElement(StyledLink, { to: href, "aria-label": "Certik" }, innerLogo))));
 };
 var CertikLogo$1 = React__default['default'].memo(CertikLogo, function (prev, next) { return prev.isDark === next.isDark; });
 var templateObject_1$7, templateObject_2$4;
