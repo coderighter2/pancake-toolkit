@@ -24,20 +24,20 @@ export const links: MenuItemsType[] = [
     href: "/swap",
     icon: "Swap",
     items: [
-      {
-        label: "Exchange",
-        href: "https://exchange.pancakeswap.finance",
-      },
-      {
-        label: "Liquidity",
-        href: "https://exchange.pancakeswap.finance/#/pool",
-      },
-      {
-        label: "Charts",
-        href: "https://exchange.pancakeswap.finance/#/charts",
-        iconName: "Chart",
-        isMobileOnly: true,
-      },
+      // {
+      //   label: "Exchange",
+      //   href: "https://exchange.pancakeswap.finance",
+      // },
+      // {
+      //   label: "Liquidity",
+      //   href: "https://exchange.pancakeswap.finance/#/pool",
+      // },
+      // {
+      //   label: "Charts",
+      //   href: "https://exchange.pancakeswap.finance/#/charts",
+      //   iconName: "Chart",
+      //   isMobileOnly: true,
+      // },
     ],
   },
   {
