@@ -12,6 +12,7 @@ export { default as ArrowUpIcon } from "./Icons/ArrowUp";
 export { default as AutoRenewIcon } from "./Icons/AutoRenew";
 export { default as BinanceChainIcon } from "./Icons/BinanceChain";
 export { default as BinanceIcon } from "./Icons/Binance";
+export { default as CroIcon } from "./Icons/Cro";
 export { default as BlockIcon } from "./Icons/Block";
 export { default as BnbUsdtPairTokenIcon } from "./Icons/BnbUsdtPairToken";
 export { default as BscScanIcon } from "./Icons/BscScan";
