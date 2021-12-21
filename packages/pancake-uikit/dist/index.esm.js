@@ -4982,20 +4982,19 @@ var links = [
         href: "/swap",
         icon: "Swap",
         items: [
-        // {
-        //   label: "Exchange",
-        //   href: "https://exchange.pancakeswap.finance",
-        // },
-        // {
-        //   label: "Liquidity",
-        //   href: "https://exchange.pancakeswap.finance/#/pool",
-        // },
-        // {
-        //   label: "Charts",
-        //   href: "https://exchange.pancakeswap.finance/#/charts",
-        //   iconName: "Chart",
-        //   isMobileOnly: true,
-        // },
+            {
+                label: "Exchange",
+                href: "https://exchange.pancakeswap.finance",
+            },
+            {
+                label: "Liquidity",
+                href: "https://exchange.pancakeswap.finance/#/pool",
+            },
+            {
+                label: "Charts",
+                href: "https://exchange.pancakeswap.finance/#/charts",
+                iconName: "Chart",
+            },
         ],
     },
     {
@@ -5196,8 +5195,8 @@ var Menu$1 = function (_a) {
                     React__default.createElement(Logo$1, { isDark: isDark, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : "/" }),
                     !isMobile && React__default.createElement(MenuItems, { items: links, activeItem: activeItem, activeSubItem: activeSubItem, ml: "24px" })),
                 React__default.createElement(Flex, { alignItems: "center", height: "100%" },
-                    !isMobile && (React__default.createElement(Box, { mr: "12px" },
-                        React__default.createElement(CakePrice$1, { cakePriceUsd: cakePriceUsd }))),
+                    React__default.createElement(Box, { mr: "12px" },
+                        React__default.createElement(CakePrice$1, { cakePriceUsd: cakePriceUsd })),
                     React__default.createElement(Box, { mr: "12px" },
                         React__default.createElement(CertikLogo$1, { isDark: isDark, href: "https://www.certik.com/projects/crowdefi" })),
                     globalMenu,
