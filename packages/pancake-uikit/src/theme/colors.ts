@@ -2,7 +2,7 @@ import { Colors } from "./types";
 
 export const baseColors = {
   failure: "#EA0617", // #ED4B9E
-  primary: "#01454B;", // #1FC7D4
+  primary: "#004475;", // #1FC7D4
   primaryBright: "#205d8f",  // #53DEE9
   primaryDark: "#074375",  // #0098A1
   secondary: "#42BFDD",  // #7645D9
@@ -52,10 +52,10 @@ export const lightColors: Colors = {
   ...baseColors,
   ...additionalColors,
   secondary: "#084B83",   // Purple, as Font Color H1 or title and button
-  background: "#f1f6f7",  // as background of content or page
+  background: "#E7F1F8",  // as background of content or page
   backgroundDisabled: "#cedcde",
-  backgroundAlt: "#f1f6f7",    // as top Menu Bar
-  backgroundAlt2: "#f1f6f7",
+  backgroundAlt: "#E7F1F8",    // as top Menu Bar
+  backgroundAlt2: "#E7F1F8",
   cardBorder: "#383241",
   contrast: "#FFFFFF",
   dropdown: "#cedcde",
@@ -65,7 +65,7 @@ export const lightColors: Colors = {
   inputSecondary: "#262130",
   primaryDark: "#0098A1",
   tertiary: "#e6ebeb",
-  text: "#01454B",     // font color on page or content, before: #F4EEFF
+  text: "#004475",     // font color on page or content, before: #F4EEFF
   textDisabled: "#666171",
   textSubtle: "#38a169",   // font color on Menu Bar top
   disabled: "#524B63",
@@ -84,12 +84,12 @@ export const lightColors: Colors = {
 export const darkColors: Colors = {
   ...baseColors,
   ...additionalColors,
-  secondary: "#05757b",   // Purple, as Font Color H1 or title and button
-  background: "#f1f6f7",  // as background of content or page
+  secondary: "#005a9c",   // Purple, as Font Color H1 or title and button
+  background: "#E7F1F8",  // as background of content or page
   backgroundDisabled: "#cedcde",
-  backgroundAlt: "#f1f6f7;",    // as top Menu Bar
-  backgroundAlt2: "#f1f6f7", // submenu itmes
-  cardBorder: "#d7e0e0",
+  backgroundAlt: "#E7F1F8;",    // as top Menu Bar
+  backgroundAlt2: "#E7F1F8", // submenu itmes
+  cardBorder: "#97c0de",
   contrast: "#FFFFFF",
   dropdown: "#cedcde",
   dropdownDeep: "#100C18",
@@ -97,10 +97,10 @@ export const darkColors: Colors = {
   input: "#fff",
   inputSecondary: "#262130",
   primaryDark: "#0098A1",
-  tertiary: "#9ac1c5",
+  tertiary: "#92c8f0",
   text: "#050505",     // font color on page or content, before: #F4EEFF
   textDisabled: "#666171",
-  textSubtle: "#01454B;",   // font color on Menu Bar top
+  textSubtle: "#004475;",   // font color on Menu Bar top
   disabled: "#524B63",
   gradients: {
     bubblegum: "08060B", // "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",         warna untuk page header

@@ -2835,7 +2835,7 @@ var PancakeToggle = function (_a) {
 
 var baseColors = {
     failure: "#EA0617",
-    primary: "#01454B;",
+    primary: "#004475;",
     primaryBright: "#205d8f",
     primaryDark: "#074375",
     secondary: "#42BFDD",
@@ -2878,7 +2878,7 @@ var additionalColors = {
 //     gold: "linear-gradient(180deg, #FFD800 0%, #FDAB32 100%)",
 //   },
 // };
-var lightColors = __assign(__assign(__assign({}, baseColors), additionalColors), { secondary: "#084B83", background: "#f1f6f7", backgroundDisabled: "#cedcde", backgroundAlt: "#f1f6f7", backgroundAlt2: "#f1f6f7", cardBorder: "#383241", contrast: "#FFFFFF", dropdown: "#cedcde", dropdownDeep: "#100C18", invertedContrast: "#191326", input: "#372F47", inputSecondary: "#262130", primaryDark: "#0098A1", tertiary: "#e6ebeb", text: "#01454B", textDisabled: "#666171", textSubtle: "#38a169", disabled: "#524B63", gradients: {
+var lightColors = __assign(__assign(__assign({}, baseColors), additionalColors), { secondary: "#084B83", background: "#E7F1F8", backgroundDisabled: "#cedcde", backgroundAlt: "#E7F1F8", backgroundAlt2: "#E7F1F8", cardBorder: "#383241", contrast: "#FFFFFF", dropdown: "#cedcde", dropdownDeep: "#100C18", invertedContrast: "#191326", input: "#372F47", inputSecondary: "#262130", primaryDark: "#0098A1", tertiary: "#e6ebeb", text: "#004475", textDisabled: "#666171", textSubtle: "#38a169", disabled: "#524B63", gradients: {
         bubblegum: "08060B",
         inverseBubblegum: "08060B",
         cardHeader: "linear-gradient(166.77deg, #ebf5f7 0%, #dcf1f5 100%)",
@@ -2887,7 +2887,7 @@ var lightColors = __assign(__assign(__assign({}, baseColors), additionalColors),
         violetAlt: "linear-gradient(180deg, #434575 0%, #66578D 100%)",
         gold: "linear-gradient(180deg, #FFD800 0%, #FDAB32 100%)",
     } });
-var darkColors = __assign(__assign(__assign({}, baseColors), additionalColors), { secondary: "#05757b", background: "#f1f6f7", backgroundDisabled: "#cedcde", backgroundAlt: "#f1f6f7;", backgroundAlt2: "#f1f6f7", cardBorder: "#d7e0e0", contrast: "#FFFFFF", dropdown: "#cedcde", dropdownDeep: "#100C18", invertedContrast: "#191326", input: "#fff", inputSecondary: "#262130", primaryDark: "#0098A1", tertiary: "#9ac1c5", text: "#050505", textDisabled: "#666171", textSubtle: "#01454B;", disabled: "#524B63", gradients: {
+var darkColors = __assign(__assign(__assign({}, baseColors), additionalColors), { secondary: "#005a9c", background: "#E7F1F8", backgroundDisabled: "#cedcde", backgroundAlt: "#E7F1F8;", backgroundAlt2: "#E7F1F8", cardBorder: "#97c0de", contrast: "#FFFFFF", dropdown: "#cedcde", dropdownDeep: "#100C18", invertedContrast: "#191326", input: "#fff", inputSecondary: "#262130", primaryDark: "#0098A1", tertiary: "#92c8f0", text: "#050505", textDisabled: "#666171", textSubtle: "#004475;", disabled: "#524B63", gradients: {
         bubblegum: "08060B",
         inverseBubblegum: "08060B",
         cardHeader: "linear-gradient(166.77deg, #ebf5f7 0%, #ebf5f7 100%)",
