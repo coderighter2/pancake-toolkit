@@ -2254,14 +2254,14 @@ var Skeleton = function (_a) {
 };
 var templateObject_1$S, templateObject_2$u, templateObject_3$b, templateObject_4$8, templateObject_5$6;
 
-var PriceLink = styled__default['default'].div(templateObject_1$R || (templateObject_1$R = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  cursor: default;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  cursor: default;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"])));
+var PriceLink = styled__default['default'].a(templateObject_1$R || (templateObject_1$R = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"])));
 var CakePrice = function (_a) {
     var cakePriceUsd = _a.cakePriceUsd, _b = _a.color, color = _b === void 0 ? "textSubtle" : _b;
     return cakePriceUsd ? (React__default['default'].createElement(PriceLink
     // href="#"
-    // href="https://pancakeswap.finance/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82"
-    // target="_blank"
-    , null,
+    , { 
+        // href="#"
+        href: "https://dexscreener.com/cronos/0x82e623aa112b03388a153d51142e5f9ea7ece258", target: "_blank" },
         React__default['default'].createElement(Icon$Y, { width: "24px", mr: "8px" }),
         React__default['default'].createElement(Text, { color: color, bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 }));
 };
@@ -4941,7 +4941,8 @@ var MenuItem = function (_a) {
                         })));
                 }),
                 React__default['default'].createElement(Box, { display: ["none", null, "block"] },
-                    React__default['default'].createElement(LogoWithTextIcon, { isDark: true, width: "160px" }))),
+                    React__default['default'].createElement(Link, { href: "/", "aria-label": "CrowFi home page" },
+                        React__default['default'].createElement(LogoWithTextIcon, { isDark: true, width: "160px" })))),
             React__default['default'].createElement(StyledSocialLinks, { order: [2], pb: ["42px", null, "32px"], mb: ["0", null, "32px"] }))));
 };
 
@@ -4972,7 +4973,7 @@ var Logo = function (_a) {
     var innerLogo = (React__default['default'].createElement(React__default['default'].Fragment, null,
         React__default['default'].createElement(Icon$1g, { className: "mobile-icon" }),
         React__default['default'].createElement(LogoWithTextIcon, { className: "desktop-icon", isDark: isDark })));
-    return (React__default['default'].createElement(Flex, null, isAbsoluteUrl ? (React__default['default'].createElement(StyledLink$1, { as: "a", href: href, "aria-label": "Pancake home page" }, innerLogo)) : (React__default['default'].createElement(StyledLink$1, { to: href, "aria-label": "Pancake home page" }, innerLogo))));
+    return (React__default['default'].createElement(Flex, null, isAbsoluteUrl ? (React__default['default'].createElement(StyledLink$1, { as: "a", href: href, "aria-label": "CrowFi home page" }, innerLogo)) : (React__default['default'].createElement(StyledLink$1, { to: href, "aria-label": "CrowFi home page" }, innerLogo))));
 };
 var Logo$1 = React__default['default'].memo(Logo, function (prev, next) { return prev.isDark === next.isDark; });
 var templateObject_1$8, templateObject_2$5;
