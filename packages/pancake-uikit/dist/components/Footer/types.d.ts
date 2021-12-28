@@ -7,6 +7,7 @@ export declare type FooterLinkType = {
         href?: string;
         isHighlighted?: boolean;
     }[];
+    hasSocialItems?: boolean;
 };
 export declare type FooterProps = {
     items: FooterLinkType[];

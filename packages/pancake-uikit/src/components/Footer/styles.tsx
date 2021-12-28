@@ -55,3 +55,25 @@ export const StyledSocialLinks = styled(SocialLinks)`
 export const StyledText = styled.span`
   color: ${darkColors.text};
 `;
+
+export const StyledFooterMenu = styled(Flex)`
+  flex: 1;
+  flex-direction: column;
+  ${({ theme }) => theme.mediaQueries.sm} {
+    flex: 5;
+    flex-direction: row;
+  }
+`
+export const StyledFooterMenuBlank = styled(Box)`
+  display: none;
+
+  ${({ theme }) => theme.mediaQueries.md} {
+    display: block;
+    flex: 2;
+  }
+
+  ${({ theme }) => theme.mediaQueries.lg} {
+    display: block;
+    flex: 3;
+  }
+`

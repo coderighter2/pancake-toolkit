@@ -4770,10 +4770,6 @@ var footerLinks = [
     {
         label: "About",
         items: [
-            // {
-            //   label: "Contact",
-            //   href: "https://docs.pancakeswap.finance/contact-us",
-            // },
             {
                 label: "Roadmap",
                 href: "https://docs.crowfi.app/roadmap",
@@ -4790,61 +4786,21 @@ var footerLinks = [
                 label: "Whitepaper",
                 href: "https://docs.crowfi.app/extras/whitepaper",
             },
-            // {
-            //   label: "CAKE",
-            //   href: "https://docs.pancakeswap.finance/tokenomics/cake",
-            // },
-            // {
-            //   label: "—",
-            // },
-            // {
-            //   label: "Online Store",
-            //   href: "https://pancakeswap.creator-spring.com/",
-            //   isHighlighted: true,
-            // },
         ],
     },
-    // {
-    //   label: "Help",
-    //   items: [
-    //     {
-    //       label: "Customer",
-    //       href: "Support https://docs.pancakeswap.finance/contact-us/customer-support",
-    //     },
-    //     {
-    //       label: "Troubleshooting",
-    //       href: "https://docs.pancakeswap.finance/help/troubleshooting",
-    //     },
-    //     {
-    //       label: "Guides",
-    //       href: "https://docs.pancakeswap.finance/get-started",
-    //     },
-    //   ],
-    // },
     {
         label: "Developers",
         items: [
-            // {
-            //   label: "Github",
-            //   href: "https://github.com/crowfi",
-            // },
             {
                 label: "Documentation",
                 href: "https://docs.crowfi.app/",
             },
-            // {
-            //   label: "Bug Bounty",
-            //   href: "https://app.gitbook.com/@pancakeswap-1/s/pancakeswap/code/bug-bounty",
-            // },
-            // {
-            //   label: "Audits",
-            //   href: "https://docs.pancakeswap.finance/help/faq#is-pancakeswap-safe-has-pancakeswap-been-audited",
-            // },
             {
                 label: "Careers",
                 href: "https://docs.crowfi.app/extras/careers",
             },
         ],
+        hasSocialItems: true
     },
 ];
 var socials = [
@@ -4863,16 +4819,6 @@ var socials = [
         icon: "Telegram",
         href: "https://t.me/crowfi"
     },
-    // {
-    //   label: "Instagram",
-    //   icon: "Instagram",
-    //   href: "https://instagram.com/smartypay",
-    // },
-    // {
-    //   label: "Github",
-    //   icon: "Github",
-    //   href: "https://github.com/crowfi/",
-    // },
 ];
 __spreadArray([], Array(20)).map(function (_, i) { return ({
     code: "en" + i,
@@ -4885,22 +4831,11 @@ var SocialLinks = function (_a) {
     return (React__default['default'].createElement(Flex, __assign({}, props), socials.map(function (social, index) {
         var iconProps = {
             iconName: social.icon,
-            width: "20px",
+            width: props.iconWidth,
             color: darkColors.textSubtle,
             style: { cursor: "pointer" },
         };
         var mr = index < socials.length - 1 ? "24px" : 0;
-        // if (social.items && Array.isArray(social.items)) {
-        //   return (
-        //     <Dropdown key={social.label} position="top" target={<IconComponent {...iconProps} mr={mr} />}>
-        //       {social.items.map((item) => (
-        //         <Link external key={item.label} href={item.href} aria-label={item.label} color="textSubtle">
-        //           {item.label}
-        //         </Link>
-        //       ))}
-        //     </Dropdown>
-        //   );
-        // }
         return (React__default['default'].createElement(Link, { external: true, key: social.label, href: social.href, "aria-label": social.label, mr: mr },
             React__default['default'].createElement(IconComponent, __assign({}, iconProps))));
     })));
@@ -4918,9 +4853,20 @@ styled__default['default'](Flex)(templateObject_5$1 || (templateObject_5$1 = __m
     var theme = _a.theme;
     return theme.mediaQueries.sm;
 });
-var StyledSocialLinks = styled__default['default'](SocialLinks$1)(templateObject_6$1 || (templateObject_6$1 = __makeTemplateObject(["\n  border-bottom: 1px solid ", ";\n"], ["\n  border-bottom: 1px solid ", ";\n"])), darkColors.cardBorder);
+styled__default['default'](SocialLinks$1)(templateObject_6$1 || (templateObject_6$1 = __makeTemplateObject(["\n  border-bottom: 1px solid ", ";\n"], ["\n  border-bottom: 1px solid ", ";\n"])), darkColors.cardBorder);
 var StyledText = styled__default['default'].span(templateObject_7$1 || (templateObject_7$1 = __makeTemplateObject(["\n  color: ", ";\n"], ["\n  color: ", ";\n"])), darkColors.text);
-var templateObject_1$9, templateObject_2$6, templateObject_3$2, templateObject_4$1, templateObject_5$1, templateObject_6$1, templateObject_7$1;
+var StyledFooterMenu = styled__default['default'](Flex)(templateObject_8 || (templateObject_8 = __makeTemplateObject(["\n  flex: 1;\n  flex-direction: column;\n  ", " {\n    flex: 5;\n    flex-direction: row;\n  }\n"], ["\n  flex: 1;\n  flex-direction: column;\n  ", " {\n    flex: 5;\n    flex-direction: row;\n  }\n"])), function (_a) {
+    var theme = _a.theme;
+    return theme.mediaQueries.sm;
+});
+var StyledFooterMenuBlank = styled__default['default'](Box)(templateObject_9 || (templateObject_9 = __makeTemplateObject(["\n  display: none;\n\n  ", " {\n    display: block;\n    flex: 2;\n  }\n\n  ", " {\n    display: block;\n    flex: 3;\n  }\n"], ["\n  display: none;\n\n  ", " {\n    display: block;\n    flex: 2;\n  }\n\n  ", " {\n    display: block;\n    flex: 3;\n  }\n"])), function (_a) {
+    var theme = _a.theme;
+    return theme.mediaQueries.md;
+}, function (_a) {
+    var theme = _a.theme;
+    return theme.mediaQueries.lg;
+});
+var templateObject_1$9, templateObject_2$6, templateObject_3$2, templateObject_4$1, templateObject_5$1, templateObject_6$1, templateObject_7$1, templateObject_8, templateObject_9;
 
 var MenuItem = function (_a) {
     _a.items; _a.isDark; _a.toggleTheme; _a.currentLang; _a.langs; _a.setLang; _a.cakePriceUsd; 
@@ -4930,20 +4876,24 @@ var MenuItem = function (_a) {
         React__default['default'].createElement(Flex, { flexDirection: "column", width: ["100%", null, "1200px;"] },
             React__default['default'].createElement(StyledIconMobileContainer, { display: ["block", null, "none"] },
                 React__default['default'].createElement(LogoWithTextIcon, { isDark: true, width: "130px" })),
-            React__default['default'].createElement(Flex, { order: [2, null, 1], flexDirection: ["column", null, "row"], justifyContent: "space-between", alignItems: "flex-start", mb: ["42px", null, "36px"] }, footerLinks === null || footerLinks === void 0 ? void 0 :
-                footerLinks.map(function (item) {
-                    var _a;
-                    return (React__default['default'].createElement(StyledList, { key: item.label },
-                        React__default['default'].createElement(StyledListItem, null, item.label), (_a = item.items) === null || _a === void 0 ? void 0 :
-                        _a.map(function (_a) {
-                            var label = _a.label, href = _a.href, _b = _a.isHighlighted, isHighlighted = _b === void 0 ? false : _b;
-                            return (React__default['default'].createElement(StyledListItem, { key: label }, href ? (React__default['default'].createElement(Link, { href: href, target: "_blank", rel: "noreferrer noopener", color: isHighlighted ? baseColors.warning : darkColors.text, bold: false }, label)) : (React__default['default'].createElement(StyledText, null, label))));
-                        })));
-                }),
-                React__default['default'].createElement(Box, { display: ["none", null, "block"] },
-                    React__default['default'].createElement(Link, { href: "/", "aria-label": "CrowFi home page" },
-                        React__default['default'].createElement(LogoWithTextIcon, { isDark: true, width: "160px" })))),
-            React__default['default'].createElement(StyledSocialLinks, { order: [2], pb: ["42px", null, "32px"], mb: ["0", null, "32px"] }))));
+            React__default['default'].createElement(Flex, { order: [2, null, 1], flexDirection: "row" },
+                React__default['default'].createElement(StyledFooterMenuBlank, null),
+                React__default['default'].createElement(StyledFooterMenu, { justifyContent: "space-between", alignItems: "flex-start" }, footerLinks === null || footerLinks === void 0 ? void 0 :
+                    footerLinks.map(function (item) {
+                        var _a;
+                        return (React__default['default'].createElement(StyledList, { key: item.label },
+                            React__default['default'].createElement(StyledListItem, null, item.label), (_a = item.items) === null || _a === void 0 ? void 0 :
+                            _a.map(function (_a) {
+                                var label = _a.label, href = _a.href, _b = _a.isHighlighted, isHighlighted = _b === void 0 ? false : _b;
+                                return (React__default['default'].createElement(StyledListItem, { key: label }, href ? (React__default['default'].createElement(Link, { href: href, target: "_blank", rel: "noreferrer noopener", color: isHighlighted ? baseColors.warning : darkColors.text, bold: false }, label)) : (React__default['default'].createElement(StyledText, null, label))));
+                            }),
+                            item.hasSocialItems &&
+                                (React__default['default'].createElement(StyledListItem, null,
+                                    React__default['default'].createElement(SocialLinks$1, { mt: "20px", iconWidth: "30px" })))));
+                    }),
+                    React__default['default'].createElement(Box, { display: ["none", null, "block"] },
+                        React__default['default'].createElement(Link, { href: "/", "aria-label": "CrowFi home page" },
+                            React__default['default'].createElement(LogoWithTextIcon, { isDark: true, width: "160px" }))))))));
 };
 
 var MenuItems = function (_a) {
