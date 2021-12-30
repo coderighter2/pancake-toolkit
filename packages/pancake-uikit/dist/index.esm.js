@@ -4821,11 +4821,11 @@ styled(Flex)(templateObject_5$1 || (templateObject_5$1 = __makeTemplateObject(["
 });
 styled(SocialLinks$1)(templateObject_6$1 || (templateObject_6$1 = __makeTemplateObject(["\n  border-bottom: 1px solid ", ";\n"], ["\n  border-bottom: 1px solid ", ";\n"])), darkColors.cardBorder);
 var StyledText = styled.span(templateObject_7$1 || (templateObject_7$1 = __makeTemplateObject(["\n  color: ", ";\n"], ["\n  color: ", ";\n"])), darkColors.text);
-var StyledFooterMenu = styled(Flex)(templateObject_8 || (templateObject_8 = __makeTemplateObject(["\n  flex: 1;\n  flex-direction: column;\n  ", " {\n    flex: 5;\n    flex-direction: row;\n  }\n"], ["\n  flex: 1;\n  flex-direction: column;\n  ", " {\n    flex: 5;\n    flex-direction: row;\n  }\n"])), function (_a) {
+styled(Flex)(templateObject_8 || (templateObject_8 = __makeTemplateObject(["\n  flex: 1;\n  flex-direction: column;\n  ", " {\n    flex: 5;\n    flex-direction: row;\n  }\n"], ["\n  flex: 1;\n  flex-direction: column;\n  ", " {\n    flex: 5;\n    flex-direction: row;\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.mediaQueries.sm;
 });
-var StyledFooterMenuBlank = styled(Box)(templateObject_9 || (templateObject_9 = __makeTemplateObject(["\n  display: none;\n\n  ", " {\n    display: block;\n    flex: 2;\n  }\n\n  ", " {\n    display: block;\n    flex: 3;\n  }\n"], ["\n  display: none;\n\n  ", " {\n    display: block;\n    flex: 2;\n  }\n\n  ", " {\n    display: block;\n    flex: 3;\n  }\n"])), function (_a) {
+styled(Box)(templateObject_9 || (templateObject_9 = __makeTemplateObject(["\n  display: none;\n\n  ", " {\n    display: block;\n    flex: 2;\n  }\n\n  ", " {\n    display: block;\n    flex: 3;\n  }\n"], ["\n  display: none;\n\n  ", " {\n    display: block;\n    flex: 2;\n  }\n\n  ", " {\n    display: block;\n    flex: 3;\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.mediaQueries.md;
 }, function (_a) {
@@ -4842,24 +4842,22 @@ var MenuItem = function (_a) {
         React__default.createElement(Flex, { flexDirection: "column", width: ["100%", null, "1200px;"] },
             React__default.createElement(StyledIconMobileContainer, { display: ["block", null, "none"] },
                 React__default.createElement(LogoWithTextIcon, { isDark: true, width: "130px" })),
-            React__default.createElement(Flex, { order: [2, null, 1], flexDirection: "row" },
-                React__default.createElement(StyledFooterMenuBlank, null),
-                React__default.createElement(StyledFooterMenu, { justifyContent: "space-between", alignItems: "flex-start" }, footerLinks === null || footerLinks === void 0 ? void 0 :
-                    footerLinks.map(function (item) {
-                        var _a;
-                        return (React__default.createElement(StyledList, { key: item.label },
-                            React__default.createElement(StyledListItem, null, item.label), (_a = item.items) === null || _a === void 0 ? void 0 :
-                            _a.map(function (_a) {
-                                var label = _a.label, href = _a.href, _b = _a.isHighlighted, isHighlighted = _b === void 0 ? false : _b;
-                                return (React__default.createElement(StyledListItem, { key: label }, href ? (React__default.createElement(Link, { href: href, target: "_blank", rel: "noreferrer noopener", color: isHighlighted ? baseColors.warning : darkColors.text, bold: false }, label)) : (React__default.createElement(StyledText, null, label))));
-                            }),
-                            item.hasSocialItems &&
-                                (React__default.createElement(StyledListItem, null,
-                                    React__default.createElement(SocialLinks$1, { mt: "20px", iconWidth: "30px" })))));
-                    }),
-                    React__default.createElement(Box, { display: ["none", null, "block"] },
-                        React__default.createElement(Link, { href: "/", "aria-label": "CrowFi home page" },
-                            React__default.createElement(LogoWithTextIcon, { isDark: true, width: "160px" }))))))));
+            React__default.createElement(Flex, { order: [2, null, 1], flexDirection: ["column", null, "row"], justifyContent: "space-between", alignItems: "flex-start" }, footerLinks === null || footerLinks === void 0 ? void 0 :
+                footerLinks.map(function (item) {
+                    var _a;
+                    return (React__default.createElement(StyledList, { key: item.label },
+                        React__default.createElement(StyledListItem, null, item.label), (_a = item.items) === null || _a === void 0 ? void 0 :
+                        _a.map(function (_a) {
+                            var label = _a.label, href = _a.href, _b = _a.isHighlighted, isHighlighted = _b === void 0 ? false : _b;
+                            return (React__default.createElement(StyledListItem, { key: label }, href ? (React__default.createElement(Link, { href: href, target: "_blank", rel: "noreferrer noopener", color: isHighlighted ? baseColors.warning : darkColors.text, bold: false }, label)) : (React__default.createElement(StyledText, null, label))));
+                        }),
+                        item.hasSocialItems &&
+                            (React__default.createElement(StyledListItem, null,
+                                React__default.createElement(SocialLinks$1, { mt: "20px", iconWidth: "30px" })))));
+                }),
+                React__default.createElement(Box, { display: ["none", null, "block"] },
+                    React__default.createElement(Link, { href: "/", "aria-label": "CrowFi home page" },
+                        React__default.createElement(LogoWithTextIcon, { isDark: true, width: "160px" })))))));
 };
 
 var MenuItems = function (_a) {

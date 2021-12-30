@@ -37,12 +37,9 @@ const MenuItem: React.FC<FooterProps> = ({
         </StyledIconMobileContainer>
         <Flex
           order={[2, null, 1]}
-          flexDirection="row">
-            <StyledFooterMenuBlank />
-            <StyledFooterMenu
-              justifyContent="space-between"
-              alignItems="flex-start"
-            >
+          flexDirection={["column", null, "row"]}
+          justifyContent="space-between"
+          alignItems="flex-start">
               {footerLinks?.map((item) => (
                 <StyledList key={item.label}>
                   <StyledListItem>{item.label}</StyledListItem>
@@ -78,7 +75,6 @@ const MenuItem: React.FC<FooterProps> = ({
                   <LogoWithTextIcon isDark width="160px" />
                 </Link>
               </Box>
-            </StyledFooterMenu>
         </Flex>
         
       </Flex>
