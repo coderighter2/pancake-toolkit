@@ -146,6 +146,7 @@ export { default as WalletIcon } from "./Icons/Wallet";
 export { default as WarningIcon } from "./Icons/Warning";
 export { default as CertikLogoIcon } from "./Icons/CertikLogo";
 export { default as CertikLogoTextIcon } from "./Icons/CertikLogoWithText";
+export { default as NomicsLogoIcon } from "./Icons/NomicsLogo";
 
 export { default as Svg } from "./Svg";
 export type { SvgProps } from "./types";

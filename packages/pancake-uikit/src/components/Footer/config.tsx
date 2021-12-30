@@ -55,6 +55,11 @@ export const socials = [
     icon: "Telegram",
     href: "https://t.me/crowfi"
   },
+  {
+    label: "Nomics",
+    icon: "NomicsLogo",
+    href: "https://nomics.com/assets/crow3-crowfi"
+  },
 ];
 
 export const langs: Language[] = [...Array(20)].map((_, i) => ({

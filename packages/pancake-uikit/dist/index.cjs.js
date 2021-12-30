@@ -1473,6 +1473,15 @@ var CertikLogo$2 = function (_a) {
 };
 var CertikLogoTextIcon = React__default['default'].memo(CertikLogo$2, function (prev, next) { return prev.isDark === next.isDark; });
 
+var NomicsLogo = function (_a) {
+    _a.isDark; var props = __rest(_a, ["isDark"]);
+    return (React__default['default'].createElement("svg", __assign({ viewBox: "0 0 60 60" }, props),
+        React__default['default'].createElement("g", { "fill-rule": "nonzero", fill: "none" },
+            React__default['default'].createElement("path", { d: "M13.487964.025067 C6.015456.130506.010218 6.212755 0 13.686 v32.628 c-.00225 5.535029 3.331107 10.525988 8.44479 12.644192 5.113684 2.118204 10.999884.946194 14.91221-2.969192 l9.287-9.289c.22107 7.469981 6.395528 13.380372 13.868036 13.274933 C53.984544 59.869494 59.989782 53.787245 60 46.314 V13.686c.00225-5.535028-3.331107-10.525988-8.44479-12.644192 C46.441525-1.076396 40.555325.095614 36.643 4.011 L27.356 13.3C27.13493 5.830018 20.960472-.080372 13.487964.025067z", fill: "hsla(355, 100%, 50%, 1)" }),
+            React__default['default'].createElement("ellipse", { fill: "#FFFFFF", rx: "13.686", ry: "13.686", cx: "13.686", cy: "46.314" }))));
+};
+var NomicsLogo$1 = React__default['default'].memo(NomicsLogo, function (prev, next) { return prev.isDark === next.isDark; });
+
 var IconModule = /*#__PURE__*/Object.freeze({
     __proto__: null,
     AccountFilledIcon: Icon$2d,
@@ -1623,6 +1632,7 @@ var IconModule = /*#__PURE__*/Object.freeze({
     WarningIcon: Icon$2,
     CertikLogoIcon: CertikLogoIcon,
     CertikLogoTextIcon: CertikLogoTextIcon,
+    NomicsLogoIcon: NomicsLogo$1,
     Svg: Svg
 });
 
@@ -4819,6 +4829,11 @@ var socials = [
         icon: "Telegram",
         href: "https://t.me/crowfi"
     },
+    {
+        label: "Nomics",
+        icon: "NomicsLogo",
+        href: "https://nomics.com/assets/crow3-crowfi"
+    },
 ];
 __spreadArray([], Array(20)).map(function (_, i) { return ({
     code: "en" + i,
@@ -5598,6 +5613,7 @@ exports.NftFillIcon = Icon$10;
 exports.NftFilledIcon = Icon$11;
 exports.NftIcon = Icon$$;
 exports.NoProfileAvatarIcon = Icon$_;
+exports.NomicsLogoIcon = NomicsLogo$1;
 exports.NotificationDot = NotificationDot;
 exports.OpenNewIcon = Icon$Z;
 exports.Overlay = Overlay;
