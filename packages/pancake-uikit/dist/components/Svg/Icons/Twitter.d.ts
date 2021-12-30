@@ -1,6 +1,4 @@
 import * as React from "react";
 import { SvgProps } from "../types";
-declare const Icon: React.FC<SvgProps & {
-    fillColor?: string;
-}>;
+declare const Icon: React.FC<SvgProps>;
 export default Icon;
