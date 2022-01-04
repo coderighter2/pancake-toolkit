@@ -3147,7 +3147,7 @@ var Slider = function (_a) {
     var isMax = value === max;
     var progressWidth;
     if (progressPercentage <= 10) {
-        progressWidth = progressPercentage + 2.5 + "%";
+        progressWidth = progressPercentage + 4.5 + "%";
     }
     else if (progressPercentage >= 90) {
         progressWidth = progressPercentage - 4 + "%";
