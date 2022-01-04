@@ -97,7 +97,7 @@ export const links: MenuItemsType[] = [
       },
       {
         label: "NFT Collectibles",
-        href: "/",
+        href: "https://www.google.com",
       },
       {
         label: "Team Leaderboard",
