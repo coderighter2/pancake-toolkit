@@ -1490,7 +1490,7 @@ var Icon$3 = function (_a) {
 };
 
 var Icon$2 = function (props) { return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 100 100" }, props),
-    React__default['default'].createElement("g", { transform: "translate(0.000000,100.000000) scale(0.100000,-0.100000)", fill: "#000000", stroke: "none" },
+    React__default['default'].createElement("g", { transform: "translate(0.000000,100.000000) scale(0.100000,-0.100000)" },
         React__default['default'].createElement("path", { d: "M835 964 c-113 -24 -229 -86 -306 -163 -110 -111 -339 -393 -339\n      -419 0 -33 16 -60 69 -115 51 -54 88 -77 123 -77 23 0 223 159 383 304 122\n      112 194 254 211 420 l7 66 -39 -1 c-22 0 -70 -7 -109 -15z m-100 -229 c16 -15\n      25 -36 25 -55 0 -19 -9 -40 -25 -55 -15 -16 -36 -25 -55 -25 -19 0 -40 9 -55\n      25 -50 49 -15 135 55 135 19 0 40 -9 55 -25z" }),
         React__default['default'].createElement("path", { d: "M116 534 c-31 -36 -56 -69 -56 -75 0 -11 37 -27 72 -31 19 -2 37 13\n      91 79 37 45 67 85 67 88 0 3 -27 5 -59 5 l-60 0 -55 -66z" }),
         React__default['default'].createElement("path", { d: "M145 299 c-15 -46 108 -169 154 -154 29 9 26 15 -24 53 -25 18 -59\n      52 -77 77 -38 50 -44 53 -53 24z" }),

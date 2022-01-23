@@ -4,8 +4,7 @@ import { SvgProps } from "../types";
 
 const Icon: React.FC<SvgProps> = (props) => (
   <Svg viewBox="0 0 100 100" {...props}>
-    <g transform="translate(0.000000,100.000000) scale(0.100000,-0.100000)"
-    fill="#000000" stroke="none">
+    <g transform="translate(0.000000,100.000000) scale(0.100000,-0.100000)">
       <path d="M835 964 c-113 -24 -229 -86 -306 -163 -110 -111 -339 -393 -339
       -419 0 -33 16 -60 69 -115 51 -54 88 -77 123 -77 23 0 223 159 383 304 122
       112 194 254 211 420 l7 66 -39 -1 c-22 0 -70 -7 -109 -15z m-100 -229 c16 -15
