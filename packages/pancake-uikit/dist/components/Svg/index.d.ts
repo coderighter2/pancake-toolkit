@@ -149,5 +149,6 @@ export { default as CertikLogoTextIcon } from "./Icons/CertikLogoWithText";
 export { default as NomicsLogoIcon } from "./Icons/NomicsLogo";
 export { default as CrowLogoIcon } from "./Icons/CrowLogo";
 export { default as LaunchpadIcon } from "./Icons/Launchpad";
+export { default as FacebookIcon } from "./Icons/Facebook";
 export { default as Svg } from "./Svg";
 export type { SvgProps } from "./types";
