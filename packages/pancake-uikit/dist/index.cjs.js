@@ -5376,42 +5376,42 @@ var connectors = [
         connectorId: exports.ConnectorNames.WalletConnect,
         priority: 2,
     },
-    {
-        title: "Trust Wallet",
-        icon: Icon$j,
-        connectorId: exports.ConnectorNames.Injected,
-        priority: 3,
-    },
-    {
-        title: "MathWallet",
-        icon: Icon$1h,
-        connectorId: exports.ConnectorNames.Injected,
-        priority: 999,
-    },
-    {
-        title: "TokenPocket",
-        icon: Icon$p,
-        connectorId: exports.ConnectorNames.Injected,
-        priority: 999,
-    },
-    {
-        title: "Binance Chain",
-        icon: Icon$25,
-        connectorId: exports.ConnectorNames.BSC,
-        priority: 999,
-    },
-    {
-        title: "SafePal",
-        icon: Icon$K,
-        connectorId: exports.ConnectorNames.Injected,
-        priority: 999,
-    },
-    {
-        title: "Coin98",
-        icon: Icon$1M,
-        connectorId: exports.ConnectorNames.Injected,
-        priority: 999,
-    },
+    // {
+    //   title: "Trust Wallet",
+    //   icon: TrustWallet,
+    //   connectorId: ConnectorNames.Injected,
+    //   priority: 3,
+    // },
+    // {
+    //   title: "MathWallet",
+    //   icon: MathWallet,
+    //   connectorId: ConnectorNames.Injected,
+    //   priority: 999,
+    // },
+    // {
+    //   title: "TokenPocket",
+    //   icon: TokenPocket,
+    //   connectorId: ConnectorNames.Injected,
+    //   priority: 999,
+    // },
+    // {
+    //   title: "Binance Chain",
+    //   icon: BinanceChain,
+    //   connectorId: ConnectorNames.BSC,
+    //   priority: 999,
+    // },
+    // {
+    //   title: "SafePal",
+    //   icon: SafePal,
+    //   connectorId: ConnectorNames.Injected,
+    //   priority: 999,
+    // },
+    // {
+    //   title: "Coin98",
+    //   icon: Coin98,
+    //   connectorId: ConnectorNames.Injected,
+    //   priority: 999,
+    // },
 ];
 var connectorLocalStorageKey = "connectorIdv2";
 var walletLocalStorageKey = "wallet";
