@@ -8,6 +8,7 @@ import SafePal from "../../components/Svg/Icons/SafePal";
 import Coin98 from "../../components/Svg/Icons/Coin98";
 
 import { Config, ConnectorNames } from "./types";
+import { CroIcon } from "../..";
 
 const connectors: Config[] = [
   {
@@ -21,6 +22,12 @@ const connectors: Config[] = [
     icon: WalletConnect,
     connectorId: ConnectorNames.WalletConnect,
     priority: 2,
+  },
+  {
+    title: "CDC Desktop Wallet",
+    icon: CroIcon,
+    connectorId: ConnectorNames.Injected,
+    priority: 3,
   },
   // {
   //   title: "Trust Wallet",

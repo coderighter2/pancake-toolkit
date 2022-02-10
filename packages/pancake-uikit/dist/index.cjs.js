@@ -5376,6 +5376,12 @@ var connectors = [
         connectorId: exports.ConnectorNames.WalletConnect,
         priority: 2,
     },
+    {
+        title: "CDC Desktop Wallet",
+        icon: Icon$23,
+        connectorId: exports.ConnectorNames.Injected,
+        priority: 3,
+    },
     // {
     //   title: "Trust Wallet",
     //   icon: TrustWallet,
