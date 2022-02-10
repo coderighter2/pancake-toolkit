@@ -5361,6 +5361,7 @@ exports.ConnectorNames = void 0;
     ConnectorNames["Injected"] = "injected";
     ConnectorNames["WalletConnect"] = "walletconnect";
     ConnectorNames["BSC"] = "bsc";
+    ConnectorNames["CDC"] = "cdc";
 })(exports.ConnectorNames || (exports.ConnectorNames = {}));
 
 var connectors = [
@@ -5379,7 +5380,7 @@ var connectors = [
     {
         title: "CDC Desktop Wallet",
         icon: Icon$23,
-        connectorId: exports.ConnectorNames.Injected,
+        connectorId: exports.ConnectorNames.CDC,
         priority: 3,
     },
     // {
