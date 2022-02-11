@@ -23,12 +23,12 @@ const connectors: Config[] = [
     connectorId: ConnectorNames.WalletConnect,
     priority: 2,
   },
-  {
-    title: "CDC Desktop Wallet",
-    icon: Cro,
-    connectorId: ConnectorNames.CDC,
-    priority: 3,
-  },
+  // {
+  //   title: "CDC Desktop Wallet",
+  //   icon: Cro,
+  //   connectorId: ConnectorNames.CDC,
+  //   priority: 3,
+  // },
   // {
   //   title: "Trust Wallet",
   //   icon: TrustWallet,

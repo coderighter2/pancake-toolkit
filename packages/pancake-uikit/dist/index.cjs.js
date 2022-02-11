@@ -5362,6 +5362,7 @@ exports.ConnectorNames = void 0;
     ConnectorNames["WalletConnect"] = "walletconnect";
     ConnectorNames["BSC"] = "bsc";
     ConnectorNames["CDC"] = "cdc";
+    ConnectorNames["Metamask"] = "Metamask";
 })(exports.ConnectorNames || (exports.ConnectorNames = {}));
 
 var connectors = [
@@ -5377,12 +5378,12 @@ var connectors = [
         connectorId: exports.ConnectorNames.WalletConnect,
         priority: 2,
     },
-    {
-        title: "CDC Desktop Wallet",
-        icon: Icon$23,
-        connectorId: exports.ConnectorNames.CDC,
-        priority: 3,
-    },
+    // {
+    //   title: "CDC Desktop Wallet",
+    //   icon: Cro,
+    //   connectorId: ConnectorNames.CDC,
+    //   priority: 3,
+    // },
     // {
     //   title: "Trust Wallet",
     //   icon: TrustWallet,
