@@ -4820,6 +4820,10 @@ var footerLinks = [
                 label: "Whitepaper",
                 href: "https://docs.crowfi.app/extras/whitepaper",
             },
+            {
+                label: "Whitelist Your Token",
+                href: "https://forms.gle/WNMqfUJNp4ZzCVeR6",
+            },
         ],
     },
     {
