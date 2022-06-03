@@ -2263,7 +2263,7 @@ var CakePrice = function (_a) {
         // href="#"
         href: "https://dexscreener.com/cronos/0x82e623aa112b03388a153d51142e5f9ea7ece258", target: "_blank" },
         React__default.createElement(Icon$10, { width: "24px", mr: "8px" }),
-        React__default.createElement(Text, { color: color, bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React__default.createElement(Skeleton, { width: 80, height: 24 }));
+        React__default.createElement(Text, { color: color, bold: true }, "$" + cakePriceUsd.toFixed(5)))) : (React__default.createElement(Skeleton, { width: 80, height: 24 }));
 };
 var CakePrice$1 = React__default.memo(CakePrice);
 var templateObject_1$R;
